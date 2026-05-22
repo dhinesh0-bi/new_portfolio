@@ -1,0 +1,97 @@
+const navLinks = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Services', href: '#services' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Contact', href: '#contact' },
+]
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear()
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault()
+    document.getElementById(href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-top">
+          <div>
+            <a href="#home" className="footer-logo" onClick={(e) => handleNavClick(e, '#home')}>
+              <div className="nav-logo-d">D</div>
+              <span className="nav-logo-text" style={{ fontSize: '1.3rem', fontWeight: 800 }}>DHINESH K</span>
+            </a>
+            <p className="footer-tagline" style={{ marginTop: '0.75rem' }}>
+              Full Stack Developer & AI Engineer — building the future, one commit at a time. 🚀
+            </p>
+          </div>
+
+          <nav className="footer-nav" aria-label="Footer navigation">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                id={`footer-nav-${link.label.toLowerCase()}`}
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+
+        <div className="footer-divider"></div>
+
+        <div className="footer-bottom">
+          <p className="footer-copy">
+            © {currentYear} <span>Dhinesh K</span>. Crafted with ❤️ and lots of ☕
+          </p>
+
+          <div className="footer-social">
+            <a
+              href="https://github.com/dhinesh0-bi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+              id="footer-github-link"
+              aria-label="GitHub"
+              style={{ width: 40, height: 40 }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/1-dhinesh-k/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+              id="footer-linkedin-link"
+              aria-label="LinkedIn"
+              style={{ width: 40, height: 40 }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a
+              href='#contact'
+              className="social-link"
+              id="footer-email-link"
+              aria-label="Email"
+              style={{ width: 40, height: 40 }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}

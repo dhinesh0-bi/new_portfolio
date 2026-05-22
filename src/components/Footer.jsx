@@ -8,9 +8,9 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-copy">
-            © {currentYear} <span>Dhinesh K</span>. Crafted with ❤️ and lots of ☕
+            © {currentYear} <span>Dhinesh K</span>. Rights are Reserved
           </p>
-
+          
           <div className="footer-social">
             <a
               href="https://github.com/dhinesh0-bi"

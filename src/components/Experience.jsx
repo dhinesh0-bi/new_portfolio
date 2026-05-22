@@ -17,17 +17,17 @@ const timeline = [
   },
   {
     id: 3,
-    date: '2024',
-    title: 'Frontend Developer',
-    company: 'Personal Projects',
-    desc: 'Built responsive, production-ready web apps including the Personal Bookshelf app (React + Open Library API) and the first-generation portfolio site deployed on Vercel. Focused heavily on UX and animation quality.',
+    date: '2025',
+    title: 'Python Fullstack Intern',
+    company: 'Femtosoft Technologies, Chennai',
+    desc: 'Completed a one-month internship as a Python Fullstack Intern at Femtosoft Technologies, Chennai. Worked on building and maintaining web applications using Python and modern full-stack frameworks, gaining hands-on industry experience in real-world software development.',
     dotColor: '#F1C40F',
   },
   {
     id: 4,
-    date: '2022 – 2024',
+    date: '2022 – 2026',
     title: 'Computer Science Student',
-    company: 'B.Sc. Computer Science',
+    company: 'B.E. Computer Science',
     desc: 'Deepened expertise in data structures, algorithms, database management, and software engineering. Started self-learning React, Node.js, and Python, applying them in personal and academic projects.',
     dotColor: '#F39C12',
   },
@@ -125,7 +125,7 @@ export default function Experience() {
                   { label: 'Projects Completed', value: '5+', color: '#A50034' },
                   { label: 'AI Systems Built', value: '3', color: '#005B96' },
                   { label: 'Technologies Used', value: '15+', color: '#F1C40F' },
-                  { label: 'GitHub Repositories', value: '10+', color: '#F39C12' },
+                  { label: 'Internship', value: '1', color: '#F39C12' },
                 ].map((stat) => (
                   <div key={stat.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.5rem 0', borderBottom: '1px solid var(--border-subtle)' }}>
                     <span style={{ fontSize: '0.875rem', color: 'var(--silver)' }}>{stat.label}</span>

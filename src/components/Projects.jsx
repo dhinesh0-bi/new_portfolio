@@ -56,16 +56,16 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Portfolio v1',
-    desc: 'My previous portfolio website showcasing projects, skills and contact info. Built with React, featuring smooth animations and a responsive design. This version has been upgraded to what you see now!',
+    title: 'AI Notes Editor',
+    desc: 'An intelligent notes editor powered by AI that helps users create, organize, and enhance their notes with smart suggestions. Features rich text editing, AI-assisted content generation, and seamless note management.',
     category: 'frontend',
-    tech: ['React', 'CSS3', 'Framer Motion', 'Vercel'],
-    icon: '🌟',
+    tech: ['React', 'AI Integration', 'Rich Text Editor', 'CSS3'],
+    icon: '📝',
     iconBg: 'rgba(165, 0, 52, 0.15)',
     cardBg: 'linear-gradient(135deg, rgba(165, 0, 52, 0.08), rgba(0, 91, 150, 0.04))',
     badge: 'live',
-    github: 'https://github.com/dhinesh0-bi',
-    demo: null
+    github: 'https://github.com/dhinesh0-bi/Ai-Notes-Editor',
+    demo: null,
   },
 ]
 
@@ -79,6 +79,7 @@ const filters = [
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all')
 
+  // Fix: always derive from the full projects array, never from a stale list
   const filtered = activeFilter === 'all'
     ? projects
     : projects.filter((p) => p.category === activeFilter)
@@ -110,19 +111,16 @@ export default function Projects() {
         <div className="projects-grid">
           {filtered.map((project, i) => (
             <div
-              className="project-card reveal"
+              className="project-card"
               key={project.id}
-              style={{ animationDelay: `${i * 0.1}s`, transitionDelay: `${i * 0.05}s` }}
+              style={{ animationDelay: `${i * 0.1}s` }}
               id={`project-card-${project.id}`}
             >
               <div className="project-card-header">
                 <div className="project-card-bg" style={{ background: project.cardBg }}></div>
-                
+
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', position: 'relative', zIndex: 1 }}>
-                  <div
-                    className="project-badge"
-                    style={{}}
-                  >
+                  <div>
                     {project.badge === 'wip' ? (
                       <span className="project-badge project-badge-wip">🚧 In Progress</span>
                     ) : (
@@ -189,7 +187,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="reveal" style={{ textAlign: 'center', marginTop: '3rem' }}>
+        <div style={{ textAlign: 'center', marginTop: '3rem' }}>
           <a
             href="https://github.com/dhinesh0-bi"
             target="_blank"

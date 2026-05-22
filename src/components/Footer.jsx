@@ -1,48 +1,9 @@
-const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Services', href: '#services' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Contact', href: '#contact' },
-]
-
 export default function Footer() {
   const currentYear = new Date().getFullYear()
-
-  const handleNavClick = (e, href) => {
-    e.preventDefault()
-    document.getElementById(href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' })
-  }
 
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-top">
-          <div>
-            <a href="#home" className="footer-logo" onClick={(e) => handleNavClick(e, '#home')}>
-              <div className="nav-logo-d">D</div>
-              <span className="nav-logo-text" style={{ fontSize: '1.3rem', fontWeight: 800 }}>DHINESH K</span>
-            </a>
-            <p className="footer-tagline" style={{ marginTop: '0.75rem' }}>
-              Full Stack Developer & AI Engineer — building the future, one commit at a time. 🚀
-            </p>
-          </div>
-
-          <nav className="footer-nav" aria-label="Footer navigation">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
-                id={`footer-nav-${link.label.toLowerCase()}`}
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-        </div>
-
         <div className="footer-divider"></div>
 
         <div className="footer-bottom">
@@ -78,7 +39,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href='#contact'
+              href="mailto:kdhinesh2005@gmail.com"
               className="social-link"
               id="footer-email-link"
               aria-label="Email"

@@ -1,0 +1,20 @@
+{
+  "name": "Dhinesh K — Portfolio",
+  "short_name": "Dhinesh K",
+  "description": "Full Stack Developer & AI Engineer — React, Node.js, Python, CRM, ML",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a14",
+  "theme_color": "#A50034",
+  "orientation": "portrait-primary",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"]
+}

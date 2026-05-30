@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block build artifacts
+Disallow: /src/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://dhinesh-portfolio.onrender.com/sitemap.xml
+
+# Crawl-delay (optional, be polite to bots)
+Crawl-delay: 10

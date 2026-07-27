@@ -52,7 +52,7 @@ const projects = [
     icon: '🏪',
     iconBg: 'rgba(165, 0, 52, 0.15)',
     cardBg: 'linear-gradient(135deg, rgba(165, 0, 52, 0.1), rgba(165, 0, 52, 0.02))',
-    badge: 'wip',
+    badge: 'live',
     github: 'https://github.com/dhinesh0-bi/CRM_shop',
     demo: null,
     featured: true,

@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 
 const skills = [
-  { name: 'React / Next.js', pct: 90, gradient: 'linear-gradient(90deg, #A50034, #CC0044)' },
-  { name: 'Node.js / Express', pct: 82, gradient: 'linear-gradient(90deg, #005B96, #0077C2)' },
-  { name: 'Python / AI/ML', pct: 78, gradient: 'linear-gradient(90deg, #F1C40F, #F39C12)' },
-  { name: 'Database (SQL/NoSQL)', pct: 80, gradient: 'linear-gradient(90deg, #A50034, #005B96)' },
-  { name: 'UI/UX Design', pct: 85, gradient: 'linear-gradient(90deg, #F39C12, #F1C40F)' },
+  { name: 'React / Next.js', pct: 90, gradient: 'linear-gradient(90deg, #ffffff, #a1a1aa)' },
+  { name: 'Node.js / Express', pct: 82, gradient: 'linear-gradient(90deg, #e4e4e7, #71717a)' },
+  { name: 'Python / AI/ML', pct: 78, gradient: 'linear-gradient(90deg, #ffffff, #d4d4d8)' },
+  { name: 'Database (SQL/NoSQL)', pct: 80, gradient: 'linear-gradient(90deg, #d4d4d8, #52525b)' },
+  { name: 'UI/UX Design', pct: 85, gradient: 'linear-gradient(90deg, #ffffff, #a1a1aa)' },
 ]
 
 const techTags = [
@@ -134,7 +134,7 @@ export default function About() {
             <p>
               From architecting robust CRM systems to building AI-powered applications, I bring a holistic approach 
               to software development — combining technical excellence with a sharp eye for design. Currently working 
-              on a cutting-edge <strong style={{color: 'var(--gold)'}}>CRM Shop Management System</strong> and exploring 
+              on a cutting-edge <strong style={{color: '#ffffff'}}>CRM Shop Management System</strong> and exploring 
               the frontiers of AI integration.
             </p>
 

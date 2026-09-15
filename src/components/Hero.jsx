@@ -98,7 +98,7 @@ export default function Hero() {
         this.opacity = Math.random() * 0.5 + 0.1
         this.vx = (Math.random() - 0.5) * 0.3
         this.vy = -this.speed
-        this.color = ['#A50034', '#005B96', '#F1C40F'][Math.floor(Math.random() * 3)]
+        this.color = ['#ffffff', '#a1a1aa', '#71717a', '#d4d4d8', '#e4e4e7'][Math.floor(Math.random() * 5)]
       }
       draw() {
         ctx.beginPath()
@@ -213,7 +213,7 @@ export default function Hero() {
             <FloatingCard
               className="hero-floating-card-1"
               icon="🤖"
-              iconBg="rgba(165, 0, 52, 0.2)"
+              iconBg="rgba(255, 255, 255, 0.1)"
               title="AI Developer"
               subtitle="ML & NLP Systems"
               delay={0}
@@ -221,7 +221,7 @@ export default function Hero() {
             <FloatingCard
               className="hero-floating-card-2"
               icon="⚡"
-              iconBg="rgba(241, 196, 15, 0.2)"
+              iconBg="rgba(255, 255, 255, 0.1)"
               title="CRM Expert"
               subtitle="Shop Management"
               delay={1.5}
@@ -229,7 +229,7 @@ export default function Hero() {
             <FloatingCard
               className="hero-floating-card-3"
               icon="🎨"
-              iconBg="rgba(0, 91, 150, 0.2)"
+              iconBg="rgba(255, 255, 255, 0.1)"
               title="UI/UX Design"
               subtitle="Premium Interfaces"
               delay={3}

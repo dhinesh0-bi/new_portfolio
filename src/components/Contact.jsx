@@ -20,7 +20,7 @@ const contactCards = [
   {
     id: 'email',
     icon: '✉️',
-    iconBg: 'linear-gradient(135deg, rgba(165, 0, 52, 0.25), rgba(165, 0, 52, 0.05))',
+    iconBg: 'rgba(255, 255, 255, 0.08)',
     label: 'Email',
     value: MY_EMAIL,
     href: '#contact',
@@ -28,7 +28,7 @@ const contactCards = [
   {
     id: 'location',
     icon: '📍',
-    iconBg: 'linear-gradient(135deg, rgba(0, 91, 150, 0.25), rgba(0, 91, 150, 0.05))',
+    iconBg: 'rgba(255, 255, 255, 0.08)',
     label: 'Location',
     value: 'Vellore,Tamil Nadu, India',
     href: null,
@@ -36,7 +36,7 @@ const contactCards = [
   {
     id: 'linkedin',
     icon: '💼',
-    iconBg: 'linear-gradient(135deg, rgba(0, 91, 150, 0.25), rgba(0, 91, 150, 0.05))',
+    iconBg: 'rgba(255, 255, 255, 0.08)',
     label: 'LinkedIn',
     value: 'linkedin.com/in/dhinesh-k',
     href: 'https://www.linkedin.com/in/1-dhinesh-k/',
@@ -44,7 +44,7 @@ const contactCards = [
   {
     id: 'github',
     icon: '💻',
-    iconBg: 'linear-gradient(135deg, rgba(241, 196, 15, 0.2), rgba(241, 196, 15, 0.04))',
+    iconBg: 'rgba(255, 255, 255, 0.08)',
     label: 'GitHub',
     value: 'github.com/dhinesh0-bi',
     href: 'https://github.com/dhinesh0-bi',

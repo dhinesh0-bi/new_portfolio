@@ -5,7 +5,7 @@ const timeline = [
     title: 'Full Stack Developer',
     company: 'Independent & Freelance Projects',
     desc: 'Building advanced CRM systems, AI-powered applications, and custom web solutions for clients and open-source. Currently developing the CRM Shop Management System with real-time analytics and multi-user support.',
-    dotColor: '#A50034',
+    dotColor: '#ffffff',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const timeline = [
     title: 'AI Solutions Developer',
     company: 'Academic & Research Projects',
     desc: 'Developed the AI Fake Review Detection System using TensorFlow and NLP. Created the AI Course Builder Platform with OpenAI integration. Explored machine learning in real-world e-commerce and education domains.',
-    dotColor: '#005B96',
+    dotColor: '#d4d4d8',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const timeline = [
     title: 'Python Fullstack Intern',
     company: 'Femtosoft Technologies, Chennai',
     desc: 'Completed a one-month internship as a Python Fullstack Intern at Femtosoft Technologies, Chennai. Worked on building and maintaining web applications using Python and modern full-stack frameworks, gaining hands-on industry experience in real-world software development.',
-    dotColor: '#F1C40F',
+    dotColor: '#a1a1aa',
   },
   {
     id: 4,
@@ -29,19 +29,19 @@ const timeline = [
     title: 'Computer Science Student',
     company: 'B.E. Computer Science',
     desc: 'Deepened expertise in data structures, algorithms, database management, and software engineering. Started self-learning React, Node.js, and Python, applying them in personal and academic projects.',
-    dotColor: '#F39C12',
+    dotColor: '#71717a',
   },
 ]
 
 const techStack = [
-  { label: 'JavaScript', icon: '⚡', color: '#F1C40F' },
-  { label: 'Python', icon: '🐍', color: '#005B96' },
-  { label: 'React', icon: '⚛️', color: '#4DB8FF' },
-  { label: 'Node.js', icon: '🟢', color: '#10B981' },
-  { label: 'Django', icon: '🔮', color: '#A50034' },
-  { label: 'MongoDB', icon: '🍃', color: '#10B981' },
-  { label: 'PostgreSQL', icon: '🐘', color: '#005B96' },
-  { label: 'TensorFlow', icon: '🧠', color: '#F39C12' },
+  { label: 'JavaScript', icon: '⚡', color: '#ffffff' },
+  { label: 'Python', icon: '🐍', color: '#e4e4e7' },
+  { label: 'React', icon: '⚛️', color: '#d4d4d8' },
+  { label: 'Node.js', icon: '🟢', color: '#a1a1aa' },
+  { label: 'Django', icon: '🔮', color: '#ffffff' },
+  { label: 'MongoDB', icon: '🍃', color: '#e4e4e7' },
+  { label: 'PostgreSQL', icon: '🐘', color: '#d4d4d8' },
+  { label: 'TensorFlow', icon: '🧠', color: '#a1a1aa' },
 ]
 
 export default function Experience() {
@@ -61,7 +61,7 @@ export default function Experience() {
           <div className="timeline reveal">
             {timeline.map((item) => (
               <div className="timeline-item" key={item.id} id={`timeline-item-${item.id}`}>
-                <div className="timeline-dot" style={{ background: item.dotColor, boxShadow: `0 0 0 3px ${item.dotColor}, 0 0 20px ${item.dotColor}44` }}></div>
+                <div className="timeline-dot" style={{ background: item.dotColor, boxShadow: `0 0 0 3px ${item.dotColor}, 0 0 20px rgba(255,255,255,0.2)` }}></div>
                 <div className="timeline-content">
                   <span className="timeline-date">{item.date}</span>
                   <h3 className="timeline-title">{item.title}</h3>
@@ -112,8 +112,8 @@ export default function Experience() {
 
             {/* Stats */}
             <div style={{
-              background: 'linear-gradient(135deg, rgba(165, 0, 52, 0.1), rgba(0, 91, 150, 0.06))',
-              border: '1px solid rgba(165, 0, 52, 0.2)',
+              background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01))',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
               borderRadius: '24px',
               padding: '2rem',
             }}>
@@ -122,10 +122,10 @@ export default function Experience() {
               </h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {[
-                  { label: 'Projects Completed', value: '5+', color: '#A50034' },
-                  { label: 'AI Systems Built', value: '3', color: '#005B96' },
-                  { label: 'Technologies Used', value: '15+', color: '#F1C40F' },
-                  { label: 'Internship', value: '1', color: '#F39C12' },
+                  { label: 'Projects Completed', value: '5+', color: '#ffffff' },
+                  { label: 'AI Systems Built', value: '3', color: '#e4e4e7' },
+                  { label: 'Technologies Used', value: '15+', color: '#d4d4d8' },
+                  { label: 'Internship', value: '1', color: '#a1a1aa' },
                 ].map((stat) => (
                   <div key={stat.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.5rem 0', borderBottom: '1px solid var(--border-subtle)' }}>
                     <span style={{ fontSize: '0.875rem', color: 'var(--silver)' }}>{stat.label}</span>
@@ -137,14 +137,14 @@ export default function Experience() {
 
             {/* Currently Working On */}
             <div style={{
-              background: 'rgba(241, 196, 15, 0.05)',
-              border: '1px solid rgba(241, 196, 15, 0.2)',
+              background: 'rgba(255, 255, 255, 0.03)',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
               borderRadius: '20px',
               padding: '1.5rem',
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
-                <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#F1C40F', animation: 'pulse-dot 2s ease infinite' }}></div>
-                <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#F1C40F', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Currently Working On</span>
+                <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#ffffff', boxShadow: '0 0 10px rgba(255,255,255,0.8)', animation: 'pulse-dot 2s ease infinite' }}></div>
+                <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#ffffff', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Currently Working On</span>
               </div>
               <p style={{ fontSize: '0.95rem', fontWeight: 700, color: 'white', marginBottom: '0.35rem' }}>CRM Shop Management System</p>
               <p style={{ fontSize: '0.82rem', color: 'var(--silver)', lineHeight: 1.6 }}>

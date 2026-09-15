@@ -4,8 +4,8 @@ const services = [
     icon: '🎨',
     title: 'Web Design',
     desc: 'Stunning, pixel-perfect web designs that captivate and convert. I create visually compelling interfaces that blend aesthetics with usability.',
-    iconBg: 'linear-gradient(135deg, rgba(165, 0, 52, 0.2), rgba(165, 0, 52, 0.05))',
-    iconBorder: 'rgba(165, 0, 52, 0.2)',
+    iconBg: 'linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02))',
+    iconBorder: 'rgba(255, 255, 255, 0.15)',
     features: [
       'Responsive & Mobile-first Design',
       'Brand Identity & Style Systems',
@@ -19,8 +19,8 @@ const services = [
     icon: '✏️',
     title: 'UI/UX Design',
     desc: 'User-centric design experiences that delight and retain. From research to high-fidelity prototypes, I craft journeys users love.',
-    iconBg: 'linear-gradient(135deg, rgba(0, 91, 150, 0.2), rgba(0, 91, 150, 0.05))',
-    iconBorder: 'rgba(0, 91, 150, 0.2)',
+    iconBg: 'linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02))',
+    iconBorder: 'rgba(255, 255, 255, 0.15)',
     features: [
       'User Research & Analysis',
       'Wireframing & Prototyping',
@@ -34,8 +34,8 @@ const services = [
     icon: '⚙️',
     title: 'Backend Development',
     desc: 'Scalable, secure, and high-performance server-side solutions. RESTful APIs, databases, and cloud deployments that power your applications.',
-    iconBg: 'linear-gradient(135deg, rgba(241, 196, 15, 0.2), rgba(241, 196, 15, 0.05))',
-    iconBorder: 'rgba(241, 196, 15, 0.2)',
+    iconBg: 'linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02))',
+    iconBorder: 'rgba(255, 255, 255, 0.15)',
     features: [
       'Node.js & Python APIs',
       'Database Architecture (SQL/NoSQL)',
@@ -49,8 +49,8 @@ const services = [
     icon: '🏪',
     title: 'CRM Development',
     desc: 'Custom CRM solutions tailored to your business workflows. Automate customer management, track leads, and boost sales productivity.',
-    iconBg: 'linear-gradient(135deg, rgba(243, 156, 18, 0.2), rgba(243, 156, 18, 0.05))',
-    iconBorder: 'rgba(243, 156, 18, 0.2)',
+    iconBg: 'linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02))',
+    iconBorder: 'rgba(255, 255, 255, 0.15)',
     features: [
       'Customer Management Dashboards',
       'Sales Pipeline Automation',
@@ -64,8 +64,8 @@ const services = [
     icon: '🤖',
     title: 'AI Integration',
     desc: 'Harness the power of artificial intelligence in your products. From NLP chatbots to ML prediction systems, I bring intelligence to your apps.',
-    iconBg: 'linear-gradient(135deg, rgba(165, 0, 52, 0.2), rgba(0, 91, 150, 0.1))',
-    iconBorder: 'rgba(165, 0, 52, 0.15)',
+    iconBg: 'linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02))',
+    iconBorder: 'rgba(255, 255, 255, 0.15)',
     features: [
       'Machine Learning Models',
       'NLP & Text Analysis',
@@ -79,8 +79,8 @@ const services = [
     icon: '📱',
     title: 'Mobile App Development',
     desc: 'Cross-platform mobile applications that deliver native-like performance on both iOS and Android. Fast, responsive, and beautifully crafted.',
-    iconBg: 'linear-gradient(135deg, rgba(0, 91, 150, 0.2), rgba(241, 196, 15, 0.1))',
-    iconBorder: 'rgba(0, 91, 150, 0.15)',
+    iconBg: 'linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02))',
+    iconBorder: 'rgba(255, 255, 255, 0.15)',
     features: [
       'React Native Apps',
       'Cross-platform Development',
@@ -136,8 +136,8 @@ export default function Services() {
           className="reveal"
           style={{
             marginTop: '4rem',
-            background: 'linear-gradient(135deg, rgba(165, 0, 52, 0.12), rgba(0, 91, 150, 0.08))',
-            border: '1px solid rgba(165, 0, 52, 0.2)',
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01))',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
             borderRadius: '24px',
             padding: '3rem',
             textAlign: 'center',
@@ -147,7 +147,7 @@ export default function Services() {
         >
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'radial-gradient(ellipse at 50% 0%, rgba(165, 0, 52, 0.1) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.05) 0%, transparent 70%)',
             pointerEvents: 'none',
           }}></div>
           <h3 style={{
@@ -157,7 +157,7 @@ export default function Services() {
             marginBottom: '1rem',
             position: 'relative',
           }}>
-            Ready to Build Something <span style={{ background: 'linear-gradient(135deg, #A50034, #F1C40F)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Extraordinary?</span>
+            Ready to Build Something <span style={{ background: 'linear-gradient(135deg, #ffffff, #a1a1aa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Extraordinary?</span>
           </h3>
           <p style={{ color: 'var(--silver)', fontSize: '1.05rem', marginBottom: '2rem', position: 'relative' }}>
             Let's collaborate and bring your vision to life with cutting-edge technology.
